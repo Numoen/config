@@ -60,8 +60,8 @@ const market: IMarket = {
   address: "0xA2d94F41FfF0c97EB7c7f8c63AB8dc8fc22d3db2",
   token: new Token({
     address: "0xA2d94F41FfF0c97EB7c7f8c63AB8dc8fc22d3db2",
-    name: "UNI-",
-    symbol: "UNI-",
+    name: "ETH+",
+    symbol: "ETH+",
     decimals: 18,
     chainId: chainID.goerli,
   }),
