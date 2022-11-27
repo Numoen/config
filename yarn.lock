@@ -155,21 +155,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@dahlia-labs/celo-contrib@npm:^0.9.3":
-  version: 0.9.3
-  resolution: "@dahlia-labs/celo-contrib@npm:0.9.3"
+"@dahlia-labs/celo-contrib@npm:^0.9.5":
+  version: 0.9.5
+  resolution: "@dahlia-labs/celo-contrib@npm:0.9.5"
   dependencies:
     tslib: ^2.4.1
-  checksum: c321300bab6d22a4cdf549a0a0b7a3c57615dce85836bb3cbb17abd208a639c124b431e27e91f93eeb35af106f36fe2c70f1a2e01c97ec8c344ec4e92c511123
+  checksum: e49e75570a8ed65bcb1d62653fbc98d00d27f261385c3f985baec0160c9b7a3685607e63e5f88f5be912535f86a34f40457769bcc21d773b9b25dbcad7464d9f
   languageName: node
   linkType: hard
 
-"@dahlia-labs/celo-tokens@npm:^0.9.3":
-  version: 0.9.3
-  resolution: "@dahlia-labs/celo-tokens@npm:0.9.3"
+"@dahlia-labs/celo-tokens@npm:^0.9.5":
+  version: 0.9.5
+  resolution: "@dahlia-labs/celo-tokens@npm:0.9.5"
   dependencies:
-    "@dahlia-labs/celo-contrib": ^0.9.3
-    "@dahlia-labs/token-utils": ^0.9.3
+    "@dahlia-labs/celo-contrib": ^0.9.5
+    "@dahlia-labs/token-utils": ^0.9.5
     "@ubeswap/token-math": ^5.2.1
     lodash.mapvalues: ^4.6.0
     tiny-invariant: ^1.3.1
@@ -177,7 +177,7 @@ __metadata:
   peerDependencies:
     bn.js: ^4 || ^5
     jsbi: ^3 || ^4
-  checksum: d121dcde6fb0915528a7b5fabe3fa832b6f872b715eff4a0526ec94dafb1ceb6cd690155adf7ad8507a67c61a9f4d33bf695e30f0eb615f17f7578e5b2a9b4bb
+  checksum: 1b23699c96f809a68e8cc8335fcef4538a900254d7c127bfb9de6ca511cade7e8bbba648d76dda49cc9e6739c356372b0be93b30ba5c4a36cacb7b3940d2152f
   languageName: node
   linkType: hard
 
@@ -185,10 +185,12 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@dahlia-labs/numoen-config@workspace:."
   dependencies:
-    "@dahlia-labs/celo-contrib": ^0.9.3
-    "@dahlia-labs/celo-tokens": ^0.9.3
-    "@dahlia-labs/numoen-utils": ^0.9.3
-    "@dahlia-labs/token-utils": ^0.9.3
+    "@dahlia-labs/celo-contrib": ^0.9.5
+    "@dahlia-labs/celo-tokens": ^0.9.5
+    "@dahlia-labs/numoen-utils": ^0.9.5
+    "@dahlia-labs/token-utils": ^0.9.5
+    "@dahlia-labs/uniswapv2-utils": ^0.9.5
+    "@dahlia-labs/use-ethers": ^0.9.5
     "@ethersproject/abi": ^5.7.0
     "@ethersproject/address": ^5.7.0
     "@ethersproject/bignumber": ^5.7.0
@@ -211,7 +213,7 @@ __metadata:
     ethers: ^5.7.2
     husky: ^8.0.2
     jsbi: ^4.3.0
-    lint-staged: ^13.0.3
+    lint-staged: ^13.0.4
     lodash: ^4.17.21
     prettier: ^2.8.0
     tiny-invariant: ^1.3.1
@@ -222,14 +224,14 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@dahlia-labs/numoen-utils@npm:^0.9.3":
-  version: 0.9.3
-  resolution: "@dahlia-labs/numoen-utils@npm:0.9.3"
+"@dahlia-labs/numoen-utils@npm:^0.9.5":
+  version: 0.9.5
+  resolution: "@dahlia-labs/numoen-utils@npm:0.9.5"
   dependencies:
-    "@dahlia-labs/celo-contrib": ^0.9.3
-    "@dahlia-labs/token-utils": ^0.9.3
-    "@dahlia-labs/uniswapv2-utils": ^0.9.3
-    "@dahlia-labs/use-ethers": ^0.9.3
+    "@dahlia-labs/celo-contrib": ^0.9.5
+    "@dahlia-labs/token-utils": ^0.9.5
+    "@dahlia-labs/uniswapv2-utils": ^0.9.5
+    "@dahlia-labs/use-ethers": ^0.9.5
     "@ethersproject/abi": ^5.7.0
     "@ethersproject/abstract-signer": ^5.7.0
     "@ethersproject/address": ^5.7.0
@@ -243,32 +245,32 @@ __metadata:
   peerDependencies:
     bn.js: ^4 || ^5
     jsbi: ^3 || ^4
-  checksum: 661d32c82bea69bc1c0d88c566766137d76aac741c5c5b394a5e652e073d5571e8e1fb6abb324b4fcd5424edec5b21b7018340d0f83ae71103f73e6e5ac70c42
+  checksum: 659562b25fbba9e372631733932a1a6426e52fc88cd5870b62d5403965e0ff7d3cfad8db009b1e4ca9d67fff22dac6d9a3d45385730f539b3f09073abbfa463b
   languageName: node
   linkType: hard
 
-"@dahlia-labs/token-utils@npm:^0.9.3":
-  version: 0.9.3
-  resolution: "@dahlia-labs/token-utils@npm:0.9.3"
+"@dahlia-labs/token-utils@npm:^0.9.5":
+  version: 0.9.5
+  resolution: "@dahlia-labs/token-utils@npm:0.9.5"
   dependencies:
-    "@dahlia-labs/celo-contrib": ^0.9.3
+    "@dahlia-labs/celo-contrib": ^0.9.5
     "@ubeswap/token-math": ^5.2.1
     tiny-invariant: ^1.3.1
     tslib: ^2.4.1
   peerDependencies:
     bn.js: ^4 || ^5
     jsbi: ^3 || ^4
-  checksum: e73828d23ebcaa4251489efb7bea3ab778f88a1d5f155529c00695ca6bc6948616ffba14aa4ef02f79f58354e7ce8f579483bdf4203353b52bb1957ebe6789f0
+  checksum: 5dd01e7087d477e903f63bd4288701b0b56e1e5131f6c2b65d5a81459ff641c8a453a37bd7fa71ace67decd1063a2b382bcaae86c9af1fee0cda99b22e2162fb
   languageName: node
   linkType: hard
 
-"@dahlia-labs/uniswapv2-utils@npm:^0.9.3":
-  version: 0.9.3
-  resolution: "@dahlia-labs/uniswapv2-utils@npm:0.9.3"
+"@dahlia-labs/uniswapv2-utils@npm:^0.9.5":
+  version: 0.9.5
+  resolution: "@dahlia-labs/uniswapv2-utils@npm:0.9.5"
   dependencies:
-    "@dahlia-labs/celo-contrib": ^0.9.3
-    "@dahlia-labs/token-utils": ^0.9.3
-    "@dahlia-labs/use-ethers": ^0.9.3
+    "@dahlia-labs/celo-contrib": ^0.9.5
+    "@dahlia-labs/token-utils": ^0.9.5
+    "@dahlia-labs/use-ethers": ^0.9.5
     "@ethersproject/abi": ^5.7.0
     "@ethersproject/abstract-signer": ^5.7.0
     "@ethersproject/address": ^5.7.0
@@ -282,16 +284,16 @@ __metadata:
   peerDependencies:
     bn.js: ^4 || ^5
     jsbi: ^3 || ^4
-  checksum: 29212fa546b0dfb63f62ea0e4cf7b3e464f76750b46ccf60d34bbb8890722e7fcd7d9e202f76b2cb96f96f42af2bdce469f1c871002af946ce129a152f6fa2f7
+  checksum: 1650342865d3395964dec08fb0ebfcb94cf333b769ffd400859c46d376d56e7cf61a26cfc565c4d2c1db665ac8774df7c37744f3e556bbd1c1b10c3bff410fe1
   languageName: node
   linkType: hard
 
-"@dahlia-labs/use-ethers@npm:^0.9.3":
-  version: 0.9.3
-  resolution: "@dahlia-labs/use-ethers@npm:0.9.3"
+"@dahlia-labs/use-ethers@npm:^0.9.5":
+  version: 0.9.5
+  resolution: "@dahlia-labs/use-ethers@npm:0.9.5"
   dependencies:
-    "@dahlia-labs/celo-contrib": ^0.9.3
-    "@dahlia-labs/token-utils": ^0.9.3
+    "@dahlia-labs/celo-contrib": ^0.9.5
+    "@dahlia-labs/token-utils": ^0.9.5
     "@ethersproject/abi": ^5.7.0
     "@ethersproject/abstract-signer": ^5.7.0
     "@ethersproject/address": ^5.7.0
@@ -305,7 +307,7 @@ __metadata:
   peerDependencies:
     bn.js: ^4 || ^5
     jsbi: ^3 || ^4
-  checksum: eec9d09d0ba44843a8b91720c8f20ca82d082415c2d3aa3c302dd83e9bd1b62749ceb427f81f52000bafbe22983de9e741d395cf5ec0b4c445ff8acfb5c266af
+  checksum: 8fe75626557f5bfa4e281a2fc9272a16e5822fc77af985aee7975b4a7432dac2c976ee2342f32d96a87421de55277ad142a0628398bd750c2c0668272d9db52f
   languageName: node
   linkType: hard
 
@@ -961,14 +963,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*, @types/node@npm:^18.7.6":
-  version: 18.7.18
-  resolution: "@types/node@npm:18.7.18"
-  checksum: 8aec61f0f96e2a69ce51f1f40f949ca578bbb4fe05d7c0b8ce3aeeb848e90f755837f17f6ac132ca404d974fe9b2974150ad3b4984fc9dc7c3ceddb10bae0167
-  languageName: node
-  linkType: hard
-
-"@types/node@npm:18.11.9":
+"@types/node@npm:*, @types/node@npm:18.11.9, @types/node@npm:^18.7.6":
   version: 18.11.9
   resolution: "@types/node@npm:18.11.9"
   checksum: cc0aae109e9b7adefc32eecb838d6fad931663bb06484b5e9cbbbf74865c721b03d16fd8d74ad90e31dbe093d956a7c2c306ba5429ba0c00f3f7505103d7a496
@@ -991,14 +986,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/semver@npm:^7.1.0":
-  version: 7.3.12
-  resolution: "@types/semver@npm:7.3.12"
-  checksum: 35536b2fc5602904f21cae681f6c9498e177dab3f54ae37c92f9a1b7e43c35f18bcd81e1c98c1cf0d33ee046bb06c771e9928c1c00a401d56a03f56549252a15
-  languageName: node
-  linkType: hard
-
-"@types/semver@npm:^7.3.12":
+"@types/semver@npm:^7.1.0, @types/semver@npm:^7.3.12":
   version: 7.3.13
   resolution: "@types/semver@npm:7.3.13"
   checksum: 00c0724d54757c2f4bc60b5032fe91cda6410e48689633d5f35ece8a0a66445e3e57fa1d6e07eb780f792e82ac542948ec4d0b76eb3484297b79bd18b8cf1cb0
@@ -2191,7 +2179,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"colorette@npm:^2.0.16, colorette@npm:^2.0.17":
+"colorette@npm:^2.0.19":
   version: 2.0.19
   resolution: "colorette@npm:2.0.19"
   checksum: 888cf5493f781e5fcf54ce4d49e9d7d698f96ea2b2ef67906834bb319a392c667f9ec69f4a10e268d2946d13a9503d2d19b3abaaaf174e3451bfe91fb9d82427
@@ -2205,10 +2193,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"commander@npm:^9.3.0":
-  version: 9.3.0
-  resolution: "commander@npm:9.3.0"
-  checksum: d421ce66fee25792a1470c69aa8d1b86434bf873a96483aa92c8267f81a6f20c6f7c426f5e82f88ac50a8ec4855d3f2787aebcdef8aa559e1080a2337a95a217
+"commander@npm:^9.4.1":
+  version: 9.4.1
+  resolution: "commander@npm:9.4.1"
+  checksum: bfb18e325a5bdf772763c2213d5c7d9e77144d944124e988bcd8e5e65fb6d45d5d4e86b09155d0f2556c9a59c31e428720e57968bcd050b2306e910a0bf3cf13
   languageName: node
   linkType: hard
 
@@ -3574,46 +3562,46 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lilconfig@npm:2.0.5":
-  version: 2.0.5
-  resolution: "lilconfig@npm:2.0.5"
-  checksum: f7bb9e42656f06930ad04e583026f087508ae408d3526b8b54895e934eb2a966b7aafae569656f2c79a29fe6d779b3ec44ba577e80814734c8655d6f71cdf2d1
+"lilconfig@npm:2.0.6":
+  version: 2.0.6
+  resolution: "lilconfig@npm:2.0.6"
+  checksum: 40a3cd72f103b1be5975f2ac1850810b61d4053e20ab09be8d3aeddfe042187e1ba70b4651a7e70f95efa1642e7dc8b2ae395b317b7d7753b241b43cef7c0f7d
   languageName: node
   linkType: hard
 
-"lint-staged@npm:^13.0.3":
-  version: 13.0.3
-  resolution: "lint-staged@npm:13.0.3"
+"lint-staged@npm:^13.0.4":
+  version: 13.0.4
+  resolution: "lint-staged@npm:13.0.4"
   dependencies:
     cli-truncate: ^3.1.0
-    colorette: ^2.0.17
-    commander: ^9.3.0
+    colorette: ^2.0.19
+    commander: ^9.4.1
     debug: ^4.3.4
     execa: ^6.1.0
-    lilconfig: 2.0.5
-    listr2: ^4.0.5
+    lilconfig: 2.0.6
+    listr2: ^5.0.5
     micromatch: ^4.0.5
     normalize-path: ^3.0.0
     object-inspect: ^1.12.2
     pidtree: ^0.6.0
     string-argv: ^0.3.1
-    yaml: ^2.1.1
+    yaml: ^2.1.3
   bin:
     lint-staged: bin/lint-staged.js
-  checksum: 53d585007df06e162febab6b0836b55016d902586a267823c8a1158529d8c742dc7297e523f7023dff02250bef3eb0d6934f4ec4f9961adfc2ebbed5f54162d0
+  checksum: 4676172df5dc734a7f409ad786a72d39bd2239de8b2e5eb1d99eaa751479f60f7b4ef85c8508698855b51b125a512f395ac6a3c7d2d57de8e8221e0aaaab6f4f
   languageName: node
   linkType: hard
 
-"listr2@npm:^4.0.5":
-  version: 4.0.5
-  resolution: "listr2@npm:4.0.5"
+"listr2@npm:^5.0.5":
+  version: 5.0.5
+  resolution: "listr2@npm:5.0.5"
   dependencies:
     cli-truncate: ^2.1.0
-    colorette: ^2.0.16
+    colorette: ^2.0.19
     log-update: ^4.0.0
     p-map: ^4.0.0
     rfdc: ^1.3.0
-    rxjs: ^7.5.5
+    rxjs: ^7.5.6
     through: ^2.3.8
     wrap-ansi: ^7.0.0
   peerDependencies:
@@ -3621,7 +3609,7 @@ __metadata:
   peerDependenciesMeta:
     enquirer:
       optional: true
-  checksum: 7af31851abe25969ef0581c6db808117e36af15b131401795182427769d9824f451ba9e8aff6ccd25b6a4f6c8796f816292caf08e5f1f9b1775e8e9c313dc6c5
+  checksum: 71c44eb648405d2725f248747ef8d5e192dd16938ec81df854c4a7e74ff1b3f4c3149461b1cff31c761bfbdf110f7f2603c9957c908294a1c6db299c9168608c
   languageName: node
   linkType: hard
 
@@ -4186,16 +4174,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prettier@npm:^2.7.1":
-  version: 2.7.1
-  resolution: "prettier@npm:2.7.1"
-  bin:
-    prettier: bin-prettier.js
-  checksum: 55a4409182260866ab31284d929b3cb961e5fdb91fe0d2e099dac92eaecec890f36e524b4c19e6ceae839c99c6d7195817579cdffc8e2c80da0cb794463a748b
-  languageName: node
-  linkType: hard
-
-"prettier@npm:^2.8.0":
+"prettier@npm:^2.7.1, prettier@npm:^2.8.0":
   version: 2.8.0
   resolution: "prettier@npm:2.8.0"
   bin:
@@ -4425,12 +4404,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"rxjs@npm:^7.5.5":
-  version: 7.5.5
-  resolution: "rxjs@npm:7.5.5"
+"rxjs@npm:^7.5.6":
+  version: 7.5.7
+  resolution: "rxjs@npm:7.5.7"
   dependencies:
     tslib: ^2.1.0
-  checksum: e034f60805210cce756dd2f49664a8108780b117cf5d0e2281506e9e6387f7b4f1532d974a8c8b09314fa7a16dd2f6cff3462072a5789672b5dcb45c4173f3c6
+  checksum: edabcdb73b0f7e0f5f6e05c2077aff8c52222ac939069729704357d6406438acca831c24210db320aba269e86dbe1a400f3769c89101791885121a342fb15d9c
   languageName: node
   linkType: hard
 
@@ -4759,14 +4738,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tiny-invariant@npm:^1.2.0":
-  version: 1.2.0
-  resolution: "tiny-invariant@npm:1.2.0"
-  checksum: e09a718a7c4a499ba592cdac61f015d87427a0867ca07f50c11fd9b623f90cdba18937b515d4a5e4f43dac92370498d7bdaee0d0e7a377a61095e02c4a92eade
-  languageName: node
-  linkType: hard
-
-"tiny-invariant@npm:^1.3.1":
+"tiny-invariant@npm:^1.2.0, tiny-invariant@npm:^1.3.1":
   version: 1.3.1
   resolution: "tiny-invariant@npm:1.3.1"
   checksum: 872dbd1ff20a21303a2fd20ce3a15602cfa7fcf9b228bd694a52e2938224313b5385a1078cb667ed7375d1612194feaca81c4ecbe93121ca1baebe344de4f84c
@@ -4853,14 +4825,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tslib@npm:^2.1.0, tslib@npm:^2.4.0":
-  version: 2.4.0
-  resolution: "tslib@npm:2.4.0"
-  checksum: 8c4aa6a3c5a754bf76aefc38026134180c053b7bd2f81338cb5e5ebf96fefa0f417bff221592bf801077f5bf990562f6264fecbc42cd3309b33872cb6fc3b113
-  languageName: node
-  linkType: hard
-
-"tslib@npm:^2.4.1":
+"tslib@npm:^2.1.0, tslib@npm:^2.4.0, tslib@npm:^2.4.1":
   version: 2.4.1
   resolution: "tslib@npm:2.4.1"
   checksum: 19480d6e0313292bd6505d4efe096a6b31c70e21cf08b5febf4da62e95c265c8f571f7b36fcc3d1a17e068032f59c269fab3459d6cd3ed6949eafecf64315fca
@@ -5140,10 +5105,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"yaml@npm:^2.1.1":
-  version: 2.1.1
-  resolution: "yaml@npm:2.1.1"
-  checksum: f48bb209918aa57cfaf78ef6448d1a1f8187f45c746f933268b7023dc59e5456004611879126c9bb5ea55b0a2b1c2b392dfde436931ece0c703a3d754562bb96
+"yaml@npm:^2.1.3":
+  version: 2.1.3
+  resolution: "yaml@npm:2.1.3"
+  checksum: 91316062324a93f9cb547469092392e7d004ff8f70c40fecb420f042a4870b2181557350da56c92f07bd44b8f7a252b0be26e6ade1f548e1f4351bdd01c9d3c7
   languageName: node
   linkType: hard
 

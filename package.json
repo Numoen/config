@@ -1,6 +1,6 @@
 {
   "name": "@dahlia-labs/numoen-config",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Configuration for the Numoen app",
   "repository": {
     "type": "git",
@@ -13,7 +13,7 @@
   ],
   "author": "Kyle Scott <kyle@numoen.com>",
   "license": "AGPL-3.0",
-  "packageManager": "yarn@3.2.3",
+  "packageManager": "yarn@3.3.0",
   "devDependencies": {
     "@rushstack/eslint-patch": "^1.2.0",
     "@saberhq/eslint-config": "^2.1.0",
@@ -29,7 +29,7 @@
     "eslint-plugin-import": "^2.26.0",
     "ethers": "^5.7.2",
     "husky": "^8.0.2",
-    "lint-staged": "^13.0.3",
+    "lint-staged": "^13.0.4",
     "prettier": "^2.8.0",
     "ts-node": "10.9.1",
     "tslib": "^2.4.1",
@@ -43,10 +43,12 @@
     "src/"
   ],
   "dependencies": {
-    "@dahlia-labs/celo-contrib": "^0.9.3",
-    "@dahlia-labs/celo-tokens": "^0.9.3",
-    "@dahlia-labs/numoen-utils": "^0.9.3",
-    "@dahlia-labs/token-utils": "^0.9.3",
+    "@dahlia-labs/celo-contrib": "^0.9.5",
+    "@dahlia-labs/celo-tokens": "^0.9.5",
+    "@dahlia-labs/numoen-utils": "^0.9.5",
+    "@dahlia-labs/token-utils": "^0.9.5",
+    "@dahlia-labs/uniswapv2-utils": "^0.9.5",
+    "@dahlia-labs/use-ethers": "^0.9.5",
     "@ethersproject/abi": "^5.7.0",
     "@ethersproject/address": "^5.7.0",
     "@ethersproject/bignumber": "^5.7.0",
