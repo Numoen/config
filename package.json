@@ -1,6 +1,6 @@
 {
   "name": "@dahlia-labs/numoen-config",
-  "version": "0.0.2",
+  "version": "0.1.1",
   "description": "Configuration for the Numoen app",
   "repository": {
     "type": "git",
@@ -43,12 +43,12 @@
     "src/"
   ],
   "dependencies": {
-    "@dahlia-labs/celo-contrib": "^0.9.5",
-    "@dahlia-labs/celo-tokens": "^0.9.5",
-    "@dahlia-labs/numoen-utils": "^0.9.5",
-    "@dahlia-labs/token-utils": "^0.9.5",
-    "@dahlia-labs/uniswapv2-utils": "^0.9.5",
-    "@dahlia-labs/use-ethers": "^0.9.5",
+    "@dahlia-labs/celo-contrib": "^0.9.8",
+    "@dahlia-labs/celo-tokens": "^0.9.8",
+    "@dahlia-labs/numoen-utils": "^0.9.8",
+    "@dahlia-labs/token-utils": "^0.9.8",
+    "@dahlia-labs/uniswapv2-utils": "^0.9.8",
+    "@dahlia-labs/use-ethers": "^0.9.8",
     "@ethersproject/abi": "^5.7.0",
     "@ethersproject/address": "^5.7.0",
     "@ethersproject/bignumber": "^5.7.0",

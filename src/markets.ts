@@ -3,20 +3,25 @@ import { Price, Token } from "@dahlia-labs/token-utils";
 import type { IUniswapV2Pair } from "@dahlia-labs/uniswapv2-utils";
 import { chainID } from "@dahlia-labs/use-ethers";
 
+const imageRegistry =
+  "https://github.com/Numoen/config/tree/master/src/images/";
+
 const UNI = new Token({
   address: "0x1f9840a85d5aF5bf1D1762F925BDADdC4201F984",
   chainId: chainID.goerli,
   name: "Uniswap",
   symbol: "UNI",
   decimals: 18,
+  logoURI: imageRegistry.concat("uni.jpg"),
 });
 
-const WETH = new Token({
+export const WETH = new Token({
   address: "0xB4FBF271143F4FBf7B91A5ded31805e42b2208d6",
   chainId: chainID.goerli,
   name: "Wrapped Ether",
   symbol: "WETH",
   decimals: 18,
+  logoURI: imageRegistry.concat("eth.jpg"),
 });
 
 const uniPair: IUniswapV2Pair = {
