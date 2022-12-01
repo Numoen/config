@@ -11,7 +11,7 @@ const USDC = new Token({
   chainId: chainID.arbitrum,
   name: "USD Coin",
   symbol: "USDC",
-  decimals: 18,
+  decimals: 6,
   logoURI: imageRegistry.concat("usdc.jpg"),
 });
 
