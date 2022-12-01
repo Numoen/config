@@ -1,4 +1,4 @@
-import type { ChainsV1, IMarket, IPair } from "@dahlia-labs/numoen-utils";
+import type { IMarket, IPair } from "@dahlia-labs/numoen-utils";
 import { Price, Token } from "@dahlia-labs/token-utils";
 import type { IUniswapV2Pair } from "@dahlia-labs/uniswapv2-utils";
 import { chainID } from "@dahlia-labs/use-ethers";
@@ -45,28 +45,24 @@ const pair: IPair = {
     name: "NLP",
     symbol: "NLP",
     decimals: 18,
-    address: "0x5e9DB25EB03D5f3Eac296620E7DE9a75F4468aA4",
+    address: "0xE50167C47d4199FadB8504AA7f678619E70E3CF8",
   }),
 
   bound: new Price(WETH, UNI, 1, 5),
   baseScaleFactor: 18,
   speculativeScaleFactor: 18,
-  address: "0x5e9DB25EB03D5f3Eac296620E7DE9a75F4468aA4",
+  address: "0xE50167C47d4199FadB8504AA7f678619E70E3CF8",
 } as const;
 
-const market: IMarket = {
+export const market: IMarket = {
   pair,
   referenceMarket: uniPair,
-  address: "0xd72486Bc1a0Cde012342959b77Ee3e35aa840338",
+  address: "0x34Af1Ae49aE5FC50076C59376791ADfC3F0c17BA",
   token: new Token({
-    address: "0xd72486Bc1a0Cde012342959b77Ee3e35aa840338",
+    address: "0x34Af1Ae49aE5FC50076C59376791ADfC3F0c17BA",
     name: "ETH+",
     symbol: "ETH+",
     decimals: 18,
     chainId: chainID.goerli,
   }),
-} as const;
-
-export const markets: Readonly<{ [chain in ChainsV1]: readonly IMarket[] }> = {
-  goerli: [market],
 } as const;

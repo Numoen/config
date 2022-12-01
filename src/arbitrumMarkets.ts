@@ -1,0 +1,68 @@
+import type { IMarket, IPair } from "@dahlia-labs/numoen-utils";
+import { Price, Token } from "@dahlia-labs/token-utils";
+import type { IUniswapV2Pair } from "@dahlia-labs/uniswapv2-utils";
+import { chainID } from "@dahlia-labs/use-ethers";
+
+const imageRegistry =
+  "https://raw.githubusercontent.com/Numoen/config/master/src/images/";
+
+const USDC = new Token({
+  address: "0xFF970A61A04b1cA14834A43f5dE4533eBDDB5CC8",
+  chainId: chainID.arbitrum,
+  name: "USD Coin",
+  symbol: "USDC",
+  decimals: 18,
+  logoURI: imageRegistry.concat("usdc.jpg"),
+});
+
+export const WETH = new Token({
+  address: "0x82aF49447D8a07e3bd95BD0d56f35241523fBab1",
+  chainId: chainID.arbitrum,
+  name: "Wrapped Ether",
+  symbol: "WETH",
+  decimals: 18,
+  logoURI: imageRegistry.concat("eth.jpg"),
+});
+
+const uniPair: IUniswapV2Pair = {
+  tokens: [WETH, USDC],
+  address: "0x905dfCD5649217c42684f23958568e533C711Aa3",
+  lpToken: new Token({
+    chainId: chainID.arbitrum,
+    name: "Sushiswap LP Token",
+    symbol: "SLP",
+    decimals: 18,
+    address: "0x905dfCD5649217c42684f23958568e533C711Aa3",
+  }),
+} as const;
+
+const pair: IPair = {
+  speculativeToken: WETH,
+  baseToken: USDC,
+
+  lp: new Token({
+    chainId: chainID.arbitrum,
+    name: "NLP",
+    symbol: "NLP",
+    decimals: 18,
+    address: "0x998C13E84d5B24cA3c4c8b02DD62228C72b006d5",
+  }),
+
+  bound: new Price(WETH, USDC, 1, 3000),
+  baseScaleFactor: 6,
+  speculativeScaleFactor: 18,
+  address: "0x998C13E84d5B24cA3c4c8b02DD62228C72b006d5",
+} as const;
+
+export const market: IMarket = {
+  pair,
+  referenceMarket: uniPair,
+  address: "0x3214a88001eE39d51ffAa9c8dc27E0a52528b25d",
+  token: new Token({
+    address: "0x3214a88001eE39d51ffAa9c8dc27E0a52528b25d",
+    name: "ETH+",
+    symbol: "ETH+",
+    decimals: 18,
+    chainId: chainID.arbitrum,
+  }),
+} as const;
