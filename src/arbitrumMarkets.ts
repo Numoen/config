@@ -6,13 +6,13 @@ import { chainID } from "@dahlia-labs/use-ethers";
 const imageRegistry =
   "https://raw.githubusercontent.com/Numoen/config/master/src/images/";
 
-const USDC = new Token({
-  address: "0xFF970A61A04b1cA14834A43f5dE4533eBDDB5CC8",
+const DPX = new Token({
+  address: "0x6C2C06790b3E3E3c38e12Ee22F8183b37a13EE55",
   chainId: chainID.arbitrum,
-  name: "USD Coin",
-  symbol: "USDC",
-  decimals: 6,
-  logoURI: imageRegistry.concat("usdc.jpg"),
+  name: "Dopex Token",
+  symbol: "DPX",
+  decimals: 18,
+  logoURI: imageRegistry.concat("dpx.jpg"),
 });
 
 export const WETH = new Token({
@@ -25,43 +25,43 @@ export const WETH = new Token({
 });
 
 const uniPair: IUniswapV2Pair = {
-  tokens: [WETH, USDC],
-  address: "0x905dfCD5649217c42684f23958568e533C711Aa3",
+  tokens: [DPX, WETH],
+  address: "0x0C1Cf6883efA1B496B01f654E247B9b419873054",
   lpToken: new Token({
     chainId: chainID.arbitrum,
     name: "Sushiswap LP Token",
     symbol: "SLP",
     decimals: 18,
-    address: "0x905dfCD5649217c42684f23958568e533C711Aa3",
+    address: "0x0C1Cf6883efA1B496B01f654E247B9b419873054",
   }),
 } as const;
 
 const pair: IPair = {
-  speculativeToken: WETH,
-  baseToken: USDC,
+  speculativeToken: DPX,
+  baseToken: WETH,
 
   lp: new Token({
     chainId: chainID.arbitrum,
     name: "NLP",
     symbol: "NLP",
     decimals: 18,
-    address: "0xb6000df93DF16fcc8101D4AaF815574468353C8f",
+    address: "0x9cc2b5d316CFE4334d4973f977c1E8d31E7A6D35",
   }),
 
-  bound: new Price(WETH, USDC, 1, 3000 * 10 ** 6),
-  baseScaleFactor: 12,
+  bound: new Price(DPX, WETH, 10, 8),
+  baseScaleFactor: 18,
   speculativeScaleFactor: 18,
-  address: "0xb6000df93DF16fcc8101D4AaF815574468353C8f",
+  address: "0x9cc2b5d316CFE4334d4973f977c1E8d31E7A6D35",
 } as const;
 
 export const market: IMarket = {
   pair,
   referenceMarket: uniPair,
-  address: "0xf7e10cbdE762d5011DBEE5418b27dB12C2f98c66",
+  address: "0x77466a50aCC5F06BD8eAA1381acDecC0720B6322",
   token: new Token({
-    address: "0xf7e10cbdE762d5011DBEE5418b27dB12C2f98c66",
-    name: "ETH+",
-    symbol: "ETH+",
+    address: "0x77466a50aCC5F06BD8eAA1381acDecC0720B6322",
+    name: "DPX+",
+    symbol: "DPX+",
     decimals: 18,
     chainId: chainID.arbitrum,
   }),
