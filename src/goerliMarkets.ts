@@ -45,21 +45,21 @@ const pair: IPair = {
     name: "NLP",
     symbol: "NLP",
     decimals: 18,
-    address: "0xE50167C47d4199FadB8504AA7f678619E70E3CF8",
+    address: "0xA76951995Ae9050541B09888963C95b39ca35a77",
   }),
 
   bound: new Price(WETH, UNI, 1, 5),
   baseScaleFactor: 18,
   speculativeScaleFactor: 18,
-  address: "0xE50167C47d4199FadB8504AA7f678619E70E3CF8",
+  address: "0xA76951995Ae9050541B09888963C95b39ca35a77",
 } as const;
 
 export const market: IMarket = {
   pair,
   referenceMarket: uniPair,
-  address: "0x34Af1Ae49aE5FC50076C59376791ADfC3F0c17BA",
+  address: "0xEF96b187c414DfdF38aA200D9e011Df6673dcC34",
   token: new Token({
-    address: "0x34Af1Ae49aE5FC50076C59376791ADfC3F0c17BA",
+    address: "0xEF96b187c414DfdF38aA200D9e011Df6673dcC34",
     name: "ETH+",
     symbol: "ETH+",
     decimals: 18,

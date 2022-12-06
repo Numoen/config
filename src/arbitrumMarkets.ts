@@ -45,21 +45,21 @@ const pair: IPair = {
     name: "NLP",
     symbol: "NLP",
     decimals: 18,
-    address: "0x9cc2b5d316CFE4334d4973f977c1E8d31E7A6D35",
+    address: "0xeEcc6aC8F0256c8c2779aE8d77C805227064B149",
   }),
 
   bound: new Price(DPX, WETH, 10, 8),
   baseScaleFactor: 18,
   speculativeScaleFactor: 18,
-  address: "0x9cc2b5d316CFE4334d4973f977c1E8d31E7A6D35",
+  address: "0xeEcc6aC8F0256c8c2779aE8d77C805227064B149",
 } as const;
 
 export const market: IMarket = {
   pair,
   referenceMarket: uniPair,
-  address: "0x77466a50aCC5F06BD8eAA1381acDecC0720B6322",
+  address: "0x98B8b1B265bcA8ef56833fafb73d5287694608ee",
   token: new Token({
-    address: "0x77466a50aCC5F06BD8eAA1381acDecC0720B6322",
+    address: "0x98B8b1B265bcA8ef56833fafb73d5287694608ee",
     name: "DPX+",
     symbol: "DPX+",
     decimals: 18,
