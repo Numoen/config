@@ -24,6 +24,27 @@ export const WETH = new Token({
   logoURI: imageRegistry.concat("eth.jpg"),
 });
 
+const USDC = new Token({
+  address: "0xFF970A61A04b1cA14834A43f5dE4533eBDDB5CC8",
+  chainId: chainID.arbitrum,
+  name: "USD Coin",
+  symbol: "USDC",
+  decimals: 6,
+  logoURI: imageRegistry.concat("usdc.jpg"),
+});
+
+const uniPairUSDC: IUniswapV2Pair = {
+  tokens: [WETH, USDC],
+  address: "0x905dfCD5649217c42684f23958568e533C711Aa3",
+  lpToken: new Token({
+    chainId: chainID.arbitrum,
+    name: "Sushiswap LP Token",
+    symbol: "SLP",
+    decimals: 18,
+    address: "0x905dfCD5649217c42684f23958568e533C711Aa3",
+  }),
+} as const;
+
 const uniPair: IUniswapV2Pair = {
   tokens: [DPX, WETH],
   address: "0x0C1Cf6883efA1B496B01f654E247B9b419873054",
@@ -54,6 +75,24 @@ const pair: IPair = {
   address: "0xeEcc6aC8F0256c8c2779aE8d77C805227064B149",
 } as const;
 
+const pairUSDC: IPair = {
+  speculativeToken: WETH,
+  baseToken: USDC,
+
+  lp: new Token({
+    chainId: chainID.arbitrum,
+    name: "NLP",
+    symbol: "NLP",
+    decimals: 18,
+    address: "0x0a2A65259EA7d5c052745c7EA3D617F4AB3Bfaa0",
+  }),
+
+  bound: new Price(WETH, USDC, 1, 4000),
+  baseScaleFactor: 6,
+  speculativeScaleFactor: 18,
+  address: "0x0a2A65259EA7d5c052745c7EA3D617F4AB3Bfaa0",
+} as const;
+
 export const market: IMarket = {
   pair,
   referenceMarket: uniPair,
@@ -62,6 +101,19 @@ export const market: IMarket = {
     address: "0x98B8b1B265bcA8ef56833fafb73d5287694608ee",
     name: "DPX+",
     symbol: "DPX+",
+    decimals: 18,
+    chainId: chainID.arbitrum,
+  }),
+} as const;
+
+export const marketUSDC: IMarket = {
+  pair: pairUSDC,
+  referenceMarket: uniPairUSDC,
+  address: "0xE48347Fc02117303dfe10A801AB539D414BF39DC",
+  token: new Token({
+    address: "0xE48347Fc02117303dfe10A801AB539D414BF39DC",
+    name: "ETH+",
+    symbol: "ETH+",
     decimals: 18,
     chainId: chainID.arbitrum,
   }),

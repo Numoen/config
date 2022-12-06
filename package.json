@@ -1,6 +1,6 @@
 {
   "name": "@dahlia-labs/numoen-config",
-  "version": "0.4.5",
+  "version": "0.4.6",
   "description": "Configuration for the Numoen app",
   "repository": {
     "type": "git",

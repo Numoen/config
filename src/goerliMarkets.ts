@@ -57,9 +57,9 @@ const pair: IPair = {
 export const market: IMarket = {
   pair,
   referenceMarket: uniPair,
-  address: "0xEF96b187c414DfdF38aA200D9e011Df6673dcC34",
+  address: "0x98B8b1B265bcA8ef56833fafb73d5287694608ee",
   token: new Token({
-    address: "0xEF96b187c414DfdF38aA200D9e011Df6673dcC34",
+    address: "0x98B8b1B265bcA8ef56833fafb73d5287694608ee",
     name: "ETH+",
     symbol: "ETH+",
     decimals: 18,
