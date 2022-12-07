@@ -1,5 +1,5 @@
 import type { IMarket, IPair } from "@dahlia-labs/numoen-utils";
-import { Price, Token } from "@dahlia-labs/token-utils";
+import { Price, Token, TokenAmount } from "@dahlia-labs/token-utils";
 import type { IUniswapV2Pair } from "@dahlia-labs/uniswapv2-utils";
 import { chainID } from "@dahlia-labs/use-ethers";
 
@@ -104,6 +104,7 @@ export const market: IMarket = {
     decimals: 18,
     chainId: chainID.arbitrum,
   }),
+  maxLiquidity: new TokenAmount(pair.lp, "100000000000000000000"),
 } as const;
 
 export const marketUSDC: IMarket = {
@@ -117,4 +118,5 @@ export const marketUSDC: IMarket = {
     decimals: 18,
     chainId: chainID.arbitrum,
   }),
+  maxLiquidity: new TokenAmount(pairUSDC.lp, "6250000000000000"),
 } as const;
