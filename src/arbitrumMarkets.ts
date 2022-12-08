@@ -19,7 +19,7 @@ export const WETH = new Token({
   address: "0x82aF49447D8a07e3bd95BD0d56f35241523fBab1",
   chainId: chainID.arbitrum,
   name: "Wrapped Ether",
-  symbol: "WETH",
+  symbol: "ETH",
   decimals: 18,
   logoURI: imageRegistry.concat("eth.jpg"),
 });
