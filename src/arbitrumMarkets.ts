@@ -15,6 +15,15 @@ const DPX = new Token({
   logoURI: imageRegistry.concat("dpx.jpg"),
 });
 
+const MAGIC = new Token({
+  address: "0x539bdE0d7Dbd336b79148AA742883198BBF60342",
+  chainId: chainID.arbitrum,
+  name: "Magic",
+  symbol: "MAGIC",
+  decimals: 18,
+  logoURI: imageRegistry.concat("magic.jpg"),
+});
+
 export const WETH = new Token({
   address: "0x82aF49447D8a07e3bd95BD0d56f35241523fBab1",
   chainId: chainID.arbitrum,
@@ -32,6 +41,18 @@ const USDC = new Token({
   decimals: 6,
   logoURI: imageRegistry.concat("usdc.jpg"),
 });
+
+const uniPairMagic: IUniswapV2Pair = {
+  tokens: [MAGIC, WETH],
+  address: "0xB7E50106A5bd3Cf21AF210A755F9C8740890A8c9",
+  lpToken: new Token({
+    chainId: chainID.arbitrum,
+    name: "Sushiswap LP Token",
+    symbol: "SLP",
+    decimals: 18,
+    address: "0xB7E50106A5bd3Cf21AF210A755F9C8740890A8c9",
+  }),
+} as const;
 
 const uniPairUSDC: IUniswapV2Pair = {
   tokens: [WETH, USDC],
@@ -93,6 +114,24 @@ const pairUSDC: IPair = {
   address: "0x0a2A65259EA7d5c052745c7EA3D617F4AB3Bfaa0",
 } as const;
 
+const pairMAGIC: IPair = {
+  speculativeToken: MAGIC,
+  baseToken: WETH,
+
+  lp: new Token({
+    chainId: chainID.arbitrum,
+    name: "NLP",
+    symbol: "NLP",
+    decimals: 18,
+    address: "0xaAe7e089D1c7caAFCe48116b15D7B87a1FDC0De9",
+  }),
+
+  bound: new Price(MAGIC, WETH, 10000, 25),
+  baseScaleFactor: 18,
+  speculativeScaleFactor: 18,
+  address: "0xaAe7e089D1c7caAFCe48116b15D7B87a1FDC0De9",
+} as const;
+
 export const market: IMarket = {
   pair,
   referenceMarket: uniPair,
@@ -119,4 +158,18 @@ export const marketUSDC: IMarket = {
     chainId: chainID.arbitrum,
   }),
   maxLiquidity: new TokenAmount(pairUSDC.lp, "6250000000000000"),
+} as const;
+
+export const marketMAGIC: IMarket = {
+  pair: pairMAGIC,
+  referenceMarket: uniPairMagic,
+  address: "0x05Acc946451706c61C71563d96755fbDe4014C36",
+  token: new Token({
+    address: "0x05Acc946451706c61C71563d96755fbDe4014C36",
+    name: "MAGIC+",
+    symbol: "MAGIC+",
+    decimals: 18,
+    chainId: chainID.arbitrum,
+  }),
+  maxLiquidity: new TokenAmount(pair.lp, "10000000000000000000000000"),
 } as const;
